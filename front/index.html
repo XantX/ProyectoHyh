@@ -17,11 +17,13 @@
   <body>
     <!--Barra de navegación-->
     <nav
-      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ftco-navbar-light site-navbar-target"
+      class="fuente bgcolornav navbar sticky-top navbar-expand-lg navbar-light site-navbar-target"
       id=""
     >
-      <div class="container-fluid justify-content-center">
-        <a class="navbar-brand" href="index.html"><span>H&H</span></a>
+      <div class="container justify-content-center">
+        <a class="navbar-brand" href="index.html"
+          ><span class="mb-0 h1">H&H</span></a
+        >
       </div>
 
       <div class="container-fluid justify-content-center mw-100">
@@ -41,7 +43,7 @@
         class="collapse navbar-collapse justify-content-center"
         id="navbarToggleExternalContent"
       >
-        <ul class="navbar-nav nav">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a href="#home-section" class="nav-link"><span>Inicio</span></a>
           </li>
@@ -64,24 +66,31 @@
     <!--fin de barra de navegación-->
 
     <!--inicio de banner-->
-    <!--se tiene que adaptar la imagen a la pantalla-->
-    <div
-      id="carouselExampleSlidesOnly"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/sacosMas.jpg" class="d-block w-100" />
+
+    <div class="header">
+      <div class="text-header d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <!--letras de banner-->
+              <h2>Web <span>H&h</span></h2>
+              <p>algo bonito</p>
+              <a href="" class="btn btn-yo"><span>Contactanos</span></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <!--fin de banner-->
+    <div class="container mw-100 text-center mt-4">
+      <h1>Productos</h1>
+    </div>
     <!--Inicio de productos-->
-    <div class="container mt-5">
+    <div class="container mt-4">
       <div class="row text-center">
         <!--tarjeta 1-->
-        <div class="col">
+        <div class="col-lg">
           <div class="contenedor-tarjeta">
             <figure>
               <img src="./images/saco3.jpg" class="frontal img-fluid" />
@@ -94,7 +103,7 @@
           </div>
         </div>
         <!--tarjeta 2-->
-        <div class="col">
+        <div class="col-lg">
           <div class="contenedor-tarjeta">
             <figure>
               <img src="./images/saco2.jpg" class="frontal img-fluid" />
@@ -107,7 +116,7 @@
           </div>
         </div>
         <!--tarjeta 3-->
-        <div class="col">
+        <div class="col-lg">
           <div class="contenedor-tarjeta">
             <figure>
               <img src="./images/saco1.jpg" class="frontal img-fluid" />
