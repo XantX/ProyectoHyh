@@ -33,6 +33,7 @@
             data-bs-toggle="collapse"
             data-bs-target="#navbarToggleExternalContent"
             aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
@@ -40,28 +41,22 @@
         </div>
       </div>
 
-      <!--<div class="container-fluid justify-content-center mw-100"></div>-->
-
       <div
         class="collapse navbar-collapse justify-content-center"
         id="navbarToggleExternalContent"
       >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#home-section" class="nav-link"><span>Inicio</span></a>
+            <a href="#" class="nav-link"><span>Inicio</span></a>
           </li>
           <li class="nav-item">
-            <a href="#products-section" class="nav-link"
-              ><span>Productos</span></a
-            >
+            <a href="#products" class="nav-link"><span>Productos</span></a>
           </li>
           <li class="nav-item">
-            <a href="#cotizar-section" class="nav-link"><span>Cotizar</span></a>
+            <a href="#cotizar" class="nav-link"><span>Cotizar</span></a>
           </li>
           <li class="nav-item">
-            <a href="#contact-section" class="nav-link"
-              ><span>Contactanos</span></a
-            >
+            <a href="#contactanos" class="nav-link"><span>Contactanos</span></a>
           </li>
         </ul>
       </div>
@@ -78,7 +73,7 @@
               <!--letras de banner-->
               <h2>Web <span>H&h</span></h2>
               <p>algo bonito</p>
-              <a href="" class="btn btn-yo"><span>Contactanos</span></a>
+              <a href="" class="btn btn-dark"><span>Contactanos</span></a>
             </div>
           </div>
         </div>
@@ -86,11 +81,12 @@
     </div>
 
     <!--fin de banner-->
+    <div class="container-fluid"></div>
     <div class="container mw-100 text-center mt-4">
       <h1>Productos</h1>
     </div>
     <!--Inicio de productos-->
-    <div class="container mt-4">
+    <div class="container mt-4" id="products">
       <div class="row text-center">
         <!--tarjeta 1-->
         <div class="col-lg">
@@ -132,7 +128,7 @@
           </div>
         </div>
       </div>
-      <div class="row text-center justify-content-md-center">
+      <div class="row text-center justify-content-md-center mt-5">
         <div class="col-lg-4">
           <div class="contenedor-tarjeta">
             <figure>
@@ -161,12 +157,13 @@
     </div>
     <!--fin de productos-->
     <!--Formulario de cotización-->
-    <div class="container-fluid mb-5 mt-5">
-      <div class="row">
-        <div class="col-lg text-center">
+    <div class="container-fluid mb-5 mt-4" id="cotizar">
+      <div class="row align-items-center justify-content-center">
+        <div class="container-fluid col-lg text-center">
           <div class="mb-4">
             <h2>Cotiza tus productos</h2>
           </div>
+
           <form action="" method="POST">
             <div class="input-group mb-3">
               <input
@@ -210,19 +207,21 @@
             <button class="btn btn-primary">Enviar</button>
           </form>
         </div>
-        <div class="col-lg">Dos</div>
+        <div class="col-lg mt-4">
+          <img src="./images/cotizar.jpg" class="container-fluid" alt="" />
+        </div>
       </div>
     </div>
     <!--fin de formulario-->
     <!--pie de pagina-->
-    <div class="card-footer">
-      <div class="row">
+    <div class="card-footer fuente bg-dark" id="contactanos">
+      <div class="row mb-5 mt-5">
         <div class="col-lg">Hola</div>
         <div class="col-lg">Hola</div>
         <div class="col-lg">
           <h2>Conectate con nosotros</h2>
-          <div class="row mb-5">
-            <div class="col-lg-2">
+          <div class="row mb-5 mt-5">
+            <div class="col-sm-2">
               <img src="./images/whatsapp.png" class="img-fluid" />
             </div>
             <div class="col-lg d-flex align-items-center">

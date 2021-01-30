@@ -1,5 +1,6 @@
 .fuente {
   font-size: 25px;
+  color: white;
 }
 
 figure {
@@ -60,6 +61,7 @@ figure .trasera {
 }
 
 .text-header {
+    font-size: 30px;
   min-height: 100vh;
   color: #f4f4f4f4;
 }
