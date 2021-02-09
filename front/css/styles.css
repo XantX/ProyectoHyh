@@ -17,10 +17,14 @@ figure {
   -ms-transform: perspective(600px) rotateY(180deg);
   -o-transform: perspective(600px) rotateY(180deg);
   transform: perspective(600px) rotateY(180deg);
+
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.39);
 }
 
 .contenedor-tarjeta:hover figure img {
-  /*filter: blur(1.3px);*/
+  filter: blur(1.3px);
 }
 
 figure .frontal,
@@ -49,10 +53,11 @@ figure .trasera {
   background-size: cover;
   background-attachment: fixed;
 }
+
 .header:before {
   content: "";
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
   position: absolute;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.1),
@@ -61,11 +66,41 @@ figure .trasera {
 }
 
 .text-header {
-    font-size: 30px;
+  position: relative;
   min-height: 100vh;
+  font-size: 30px;
   color: #f4f4f4f4;
+}
+
+.text-header span {
+  letter-spacing: 5px;
+  font-size: 1.3em;
+  margin: 0 0 0 5px;
+}
+.text-header p {
+  font-size: 1em;
+}
+.text-header a span {
+  color: #f4f4f4;
+}
+.text-header a span:hover {
+  color: black;
+}
+.btn-yo {
+  padding: 7px 12px;
+  color: #f4f4f4;
+  background-color: #efba1b;
+}
+.btn-yo:hover {
+  background-color: #efba1b;
 }
 
 .bgcolornav {
   background-color: #efba1b;
+}
+@media (max-width: 360px){
+    .iconContact{
+        width: 50px;
+        height: 50px;
+    }
 }
